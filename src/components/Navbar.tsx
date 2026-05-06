@@ -13,8 +13,10 @@ import {
 import { Separator } from '@/components/ui/separator'
 
 const navLinks = [
+  { label: 'Problem', href: '#problem' },
   { label: 'Features', href: '#features' },
   { label: 'Pricing', href: '#pricing' },
+  { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ]
 

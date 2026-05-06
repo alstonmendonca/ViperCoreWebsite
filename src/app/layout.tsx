@@ -3,9 +3,9 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vipercore.in'),
-  title: 'ViperCore POS — Offline Billing for India',
+  title: 'ViperCore POS \u2014 Works Even When the Internet Doesn\u2019t',
   description:
-    'Runs without internet. AES-256 encrypted. Fast billing, thermal printing, GST invoicing. Rs. 10,000 one-time.',
+    'POS software built for small cafes in Mangalore. One-time payment, no monthly recharge. Runs fully offline after activation. Rs. 10,000 one-time.',
   icons: {
     icon: '/favicon.ico',
   },

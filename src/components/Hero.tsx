@@ -34,9 +34,9 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="font-heading text-[clamp(2.5rem,5.5vw,4.25rem)] font-bold tracking-tight leading-[1.04] text-white mb-6"
             >
-              Billing software<br />
-              <span className="text-zinc-400">that doesn’t need</span><br />
-              the internet.
+              POS software that works
+              <span className="text-zinc-400"> — even when</span><br />
+              <span className="text-zinc-400">the internet doesn't.</span>
             </motion.h1>
 
             {/* Subhead — serif, wider, more personality */}
@@ -46,7 +46,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="text-lg lg:text-xl text-zinc-400 leading-relaxed max-w-md mb-10" style={{ fontStyle: 'italic', fontWeight: 300 }}
             >
-              Fast billing, thermal printing, GST invoices, table management — all running locally on your machine. No cloud. No monthly bill.
+              Built for small cafés in Mangalore. One-time payment. No monthly recharge. Runs fully offline after activation.
             </motion.p>
 
             {/* CTAs — not centered, left-aligned */}
@@ -57,17 +57,17 @@ export default function Hero() {
               className="flex flex-wrap items-center gap-4"
             >
               <a
-                href="#pricing"
+                href="#contact"
                 className="group inline-flex items-center gap-2 h-11 px-6 text-[13px] font-medium text-zinc-950 bg-white hover:bg-amber-400 transition-all duration-200" style={{ borderRadius: '2px' }}
               >
-                Get ViperCore
+                Book Free Demo
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
               <a
-                href="#features"
+                href="#contact"
                 className="inline-flex items-center h-11 px-6 text-[13px] text-zinc-500 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-200" style={{ borderRadius: '2px' }}
               >
-                See what it does
+                Start 7-Day Trial
               </a>
             </motion.div>
           </div>
@@ -85,9 +85,9 @@ export default function Hero() {
               </div>
               <div className="space-y-5">
                 {[
-                  { value: '100%', label: 'Offline — no internet required, ever' },
+                  { value: '100%', label: 'Offline after one-time activation' },
                   { value: 'AES-256', label: 'Encrypted local storage' },
-                  { value: '₹0', label: 'Monthly fees — one-time purchase' },
+                  { value: '₹10,000', label: 'One-time purchase. No mandatory renewals.' },
                   { value: '58mm / 80mm', label: 'Thermal printer support' },
                 ].map((stat, i) => (
                   <div key={i} className="flex items-baseline gap-4">

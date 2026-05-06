@@ -70,7 +70,7 @@ export default function Pricing() {
             transition={{ duration: 0.4, delay: 0.1 }}
             className="text-[16px] text-zinc-500 leading-relaxed"
           >
-            One payment. No per-user charges. No hidden fees. Then choose how you want to stay updated.
+            One-time purchase. No mandatory renewals. Then choose how you want to stay updated.
           </motion.p>
         </div>
 

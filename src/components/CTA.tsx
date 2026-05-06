@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
 
 export default function CTA() {
   const ref = useRef(null)
@@ -38,24 +38,31 @@ export default function CTA() {
             </div>
 
             <h2 className="font-heading text-2xl lg:text-3xl font-bold tracking-tight text-white mb-4">
-              Ready to ditch the monthly bills?
+              Stop paying every year for billing software.
             </h2>
             <p className="text-[16px] text-zinc-500 mb-8 leading-relaxed">
               One purchase. Your machine. No middleman. We’ll get you set up in minutes.
             </p>
             <div className="flex flex-wrap items-center gap-3 mb-8">
               <a
-                href="mailto:alstondmendonca@gmail.com"
+                href="#contact"
                 className="group inline-flex items-center gap-2 h-11 px-6 text-[13px] font-medium text-zinc-950 bg-white hover:bg-amber-400 transition-all duration-200" style={{ borderRadius: '2px' }}
               >
-                Get ViperCore
+                Book Free Demo
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
               <a
-                href="mailto:alstondmendonca@gmail.com"
+                href="#contact"
                 className="inline-flex items-center h-11 px-6 text-[13px] text-zinc-500 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-200" style={{ borderRadius: '2px' }}
               >
-                Talk to us
+                Start 7-Day Trial
+              </a>
+              <a
+                href="tel:+919108816244"
+                className="group inline-flex items-center gap-2 h-11 px-6 text-[13px] text-zinc-500 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-200" style={{ borderRadius: '2px' }}
+              >
+                <Phone className="w-3.5 h-3.5" />
+                Call Now
               </a>
             </div>
 
@@ -76,7 +83,7 @@ export default function CTA() {
                 </a>
                 <a
                   href="tel:+919108816244"
-                  className="text-[13px] text-zinc-500 hover:text-white transition-colors duration-150"
+                  className="text-[14px] text-white font-medium hover:text-amber-400 transition-colors duration-150"
                 >
                   +91 91088 16244
                 </a>
