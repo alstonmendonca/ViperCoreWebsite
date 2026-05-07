@@ -67,7 +67,7 @@ export async function GET() {
       }
 
       const signData = await signRes.json()
-      chunkUrls.push(`${SUPABASE_URL}/storage/v1${signData.signedUrl}`)
+      chunkUrls.push(`${SUPABASE_URL}/storage/v1${signData.signedURL}`)
     }
 
     return NextResponse.json({
