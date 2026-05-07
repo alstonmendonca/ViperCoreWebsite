@@ -99,7 +99,7 @@ export default function Pricing() {
             </div>
 
             <a
-              href="mailto:alstondmendonca@gmail.com"
+              href="/download"
               className="group inline-flex items-center gap-2 h-11 px-6 text-[13px] font-medium text-zinc-950 bg-white hover:bg-amber-400 transition-all duration-200 shrink-0" style={{ borderRadius: '2px' }}
             >
               Get ViperCore
@@ -107,7 +107,7 @@ export default function Pricing() {
             </a>
           </div>
 
-          {/* Included features — horizontal wrap */}
+          {/* Included features - horizontal wrap */}
           <div className="mt-8 pt-8 border-t border-zinc-800/40">
             <div className="flex flex-wrap gap-x-6 gap-y-2">
               {included.map((item, i) => (

@@ -41,14 +41,14 @@ export default function CTA() {
               Stop paying every year for billing software.
             </h2>
             <p className="text-[16px] text-zinc-500 mb-8 leading-relaxed">
-              One purchase. Your machine. No middleman. We’ll get you set up in minutes.
+              One purchase. Your machine. No middleman. We will get you set up in minutes.
             </p>
             <div className="flex flex-wrap items-center gap-3 mb-8">
               <a
-                href="#contact"
+                href="/download"
                 className="group inline-flex items-center gap-2 h-11 px-6 text-[13px] font-medium text-zinc-950 bg-white hover:bg-amber-400 transition-all duration-200" style={{ borderRadius: '2px' }}
               >
-                Book Free Demo
+                Get ViperCore
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
               <a
@@ -69,7 +69,7 @@ export default function CTA() {
             {/* Contact details */}
             <div className="pt-6 border-t border-zinc-800/40 space-y-2">
               <p className="text-[14px] text-zinc-400">
-                Alston D’Mendonca
+                Alston D Mendonca
               </p>
               <p className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.1em]">
                 Co-Founder &amp; CEO, ViperCore

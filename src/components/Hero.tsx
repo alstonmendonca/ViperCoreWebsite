@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         {/* Asymmetric two-column editorial layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-end">
-          {/* Left: headline block — takes 7 cols */}
+          {/* Left: headline block */}
           <div className="lg:col-span-7 relative z-10">
             {/* Eyebrow with amber accent line */}
             <motion.div
@@ -27,7 +27,7 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            {/* Headline — left-aligned, editorial scale */}
+            {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -36,10 +36,10 @@ export default function Hero() {
             >
               POS software that works
               <span className="text-zinc-400"> — even when</span><br />
-              <span className="text-zinc-400">the internet doesn't.</span>
+              <span className="text-zinc-400">the internet doesn’t.</span>
             </motion.h1>
 
-            {/* Subhead — serif, wider, more personality */}
+            {/* Subhead */}
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export default function Hero() {
               Built for small cafés in Mangalore. One-time payment. No monthly recharge. Runs fully offline after activation.
             </motion.p>
 
-            {/* CTAs — not centered, left-aligned */}
+            {/* CTAs */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -57,10 +57,10 @@ export default function Hero() {
               className="flex flex-wrap items-center gap-4"
             >
               <a
-                href="#contact"
+                href="/download"
                 className="group inline-flex items-center gap-2 h-11 px-6 text-[13px] font-medium text-zinc-950 bg-white hover:bg-amber-400 transition-all duration-200" style={{ borderRadius: '2px' }}
               >
-                Book Free Demo
+                Get ViperCore
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
               <a
@@ -72,7 +72,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right: stats block — offset, overlapping feel */}
+          {/* Right: stats block */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
