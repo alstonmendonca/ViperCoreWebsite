@@ -9,10 +9,9 @@ interface ReleaseInfo {
   fileName: string
   sha256: string | null
   releaseNotes: string | null
-  chunkCount: number
   fileSize: number | null
   publishedAt: string
-  chunkUrls: string[]
+  downloadUrl: string
 }
 
 type Stage = 'loading' | 'ready' | 'downloading' | 'done' | 'error'
@@ -58,44 +57,38 @@ export default function DownloadPage() {
     setTotalBytes(release.fileSize || 0)
 
     try {
-      const blobs: Blob[] = []
+      const response = await fetch(release.downloadUrl)
+      if (!response.ok) throw new Error('Failed to download file')
+
+      const reader = response.body?.getReader()
+      if (!reader) throw new Error('ReadableStream not supported')
+
+      const chunks: Uint8Array[] = []
       let transferred = 0
       const speedTracker = { bytes: 0, lastTime: Date.now(), speed: 0 }
 
-      for (let i = 0; i < release.chunkUrls.length; i++) {
-        const response = await fetch(release.chunkUrls[i])
-        if (!response.ok) throw new Error(`Failed to download chunk ${i + 1}`)
-
-        const reader = response.body?.getReader()
-        if (!reader) throw new Error('ReadableStream not supported')
-
-        const chunks: Uint8Array[] = []
-        while (true) {
-          const { done, value } = await reader.read()
-          if (done) break
-          chunks.push(value)
-          transferred += value.length
-          speedTracker.bytes += value.length
-          const now = Date.now()
-          const elapsed = now - speedTracker.lastTime
-          if (elapsed >= 500) {
-            speedTracker.speed = Math.round((speedTracker.bytes / elapsed) * 1000)
-            speedTracker.bytes = 0
-            speedTracker.lastTime = now
-            setSpeed(speedTracker.speed)
-          }
-          setDownloadedBytes(transferred)
-          if (release.fileSize) {
-            setProgress(Math.min(100, Math.round((transferred / release.fileSize) * 100)))
-          }
+      while (true) {
+        const { done, value } = await reader.read()
+        if (done) break
+        chunks.push(value)
+        transferred += value.length
+        speedTracker.bytes += value.length
+        const now = Date.now()
+        const elapsed = now - speedTracker.lastTime
+        if (elapsed >= 500) {
+          speedTracker.speed = Math.round((speedTracker.bytes / elapsed) * 1000)
+          speedTracker.bytes = 0
+          speedTracker.lastTime = now
+          setSpeed(speedTracker.speed)
         }
-
-        const blob = new Blob(chunks as BlobPart[])
-        blobs.push(blob)
+        setDownloadedBytes(transferred)
+        if (release.fileSize) {
+          setProgress(Math.min(100, Math.round((transferred / release.fileSize) * 100)))
+        }
       }
 
-      const finalBlob = new Blob(blobs)
-      const url = URL.createObjectURL(finalBlob)
+      const blob = new Blob(chunks as BlobPart[])
+      const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
       a.download = release.fileName || `ViperCore-${release.version}.exe`

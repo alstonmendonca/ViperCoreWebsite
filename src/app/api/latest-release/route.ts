@@ -54,8 +54,6 @@ export async function GET() {
       fileSize: release.file_size,
       publishedAt: release.published_at,
       downloadUrl,
-      chunkCount: 1,
-      chunkUrls: [downloadUrl],
     })
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Unexpected error'
