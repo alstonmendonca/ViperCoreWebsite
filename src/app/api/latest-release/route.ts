@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://cjkbjnazwewpnzypgber.supabase.co'
 const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || ''
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.viper-core.com'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.viper-core.com').replace(/\/+$/, '')
 
 export async function GET() {
   if (!SUPABASE_SERVICE_KEY) {
@@ -65,4 +65,5 @@ export async function GET() {
     )
   }
 }
+
 
