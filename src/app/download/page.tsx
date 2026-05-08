@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect, useState, useRef, useCallback } from 'react'
 import { motion } from 'framer-motion'
@@ -177,7 +177,7 @@ export default function DownloadPage() {
             </h1>
             <p className="text-[16px] text-zinc-500 mb-8">
               Version {release.version}
-              {release.fileSize ? ` \u00b7 ${formatBytes(release.fileSize)}` : ''}
+              {release.fileSize ? ` · ${formatBytes(release.fileSize)}` : ''}
             </p>
 
             {/* Progress bar */}
@@ -195,7 +195,7 @@ export default function DownloadPage() {
                 <span>
                   {downloadedBytes > 0 && formatBytes(downloadedBytes)}
                   {totalBytes > 0 && ` / ${formatBytes(totalBytes)}`}
-                  {speed > 0 && ` \u00b7 ${formatBytes(speed)}/s`}
+                  {speed > 0 && ` · ${formatBytes(speed)}/s`}
                 </span>
               </div>
             </div>
@@ -289,11 +289,11 @@ export default function DownloadPage() {
             <h3 className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em] mb-4">System requirements</h3>
             <div className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-[12px] text-zinc-500">
               <span>Windows 10 / 11</span>
-              <span className="text-zinc-800">\u00b7</span>
+              <span className="text-zinc-800">·</span>
               <span>64-bit</span>
-              <span className="text-zinc-800">\u00b7</span>
+              <span className="text-zinc-800">·</span>
               <span>4 GB RAM</span>
-              <span className="text-zinc-800">\u00b7</span>
+              <span className="text-zinc-800">·</span>
               <span>200 MB disk</span>
             </div>
           </motion.div>

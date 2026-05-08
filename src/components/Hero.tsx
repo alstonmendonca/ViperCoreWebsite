@@ -85,10 +85,10 @@ export default function Hero() {
               </div>
               <div className="space-y-5">
                 {[
-                  { value: '100%', label: 'Offline after one-time activation' },
-                  { value: 'AES-256', label: 'Encrypted local storage' },
-                  { value: '₹10,000', label: 'One-time purchase. No mandatory renewals.' },
-                  { value: '58mm / 80mm', label: 'Thermal printer support' },
+                  { value: '₹10,000', label: 'One-time payment. No subscriptions, no monthly fees. Ever.' },
+                  { value: '100%', label: 'Offline-first. Works without internet after one-time activation.' },
+                  { value: 'AES-256', label: 'All data encrypted locally. Nothing ever leaves your machine.' },
+                  { value: '9', label: 'Core modules: billing, menu, inventory, tables, reports & more.' },
                 ].map((stat, i) => (
                   <div key={i} className="flex items-baseline gap-4">
                     <span className="font-mono text-[15px] text-amber-500/80 tabular-nums w-20 shrink-0">
