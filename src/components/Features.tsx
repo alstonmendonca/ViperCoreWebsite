@@ -91,7 +91,7 @@ function FeatureCard({
       {/* Amber accent dot */}
       <div className="flex items-center gap-3 mb-4">
         <span className="block w-1.5 h-1.5 bg-amber-500/60 group-hover:bg-amber-400 transition-colors duration-300" />
-        <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+        <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
           {feature.number}
         </span>
       </div>
@@ -131,7 +131,7 @@ export default function Features() {
             className="flex items-center gap-3 mb-4"
           >
             <span className="block w-8 h-px bg-amber-500/60" />
-            <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+            <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
               Capabilities
             </span>
           </motion.div>

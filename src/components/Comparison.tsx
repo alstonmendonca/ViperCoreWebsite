@@ -26,7 +26,7 @@ export default function Comparison() {
               className="flex items-center gap-3 mb-4"
             >
               <span className="block w-8 h-px bg-amber-500/60" />
-              <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+              <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                 Cost Comparison
               </span>
             </motion.div>
@@ -50,7 +50,7 @@ export default function Comparison() {
             {/* Table header */}
             <div className="grid grid-cols-3 border-b border-zinc-800/40">
               <div className="p-4 lg:p-5">
-                <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+                <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                   &nbsp;
                 </span>
               </div>
@@ -60,7 +60,7 @@ export default function Comparison() {
                 </span>
               </div>
               <div className="p-4 lg:p-5 border-l border-zinc-800/40">
-                <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+                <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                   Typical Cloud POS
                 </span>
               </div>

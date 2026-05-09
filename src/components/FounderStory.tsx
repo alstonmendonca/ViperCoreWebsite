@@ -21,7 +21,7 @@ export default function FounderStory() {
                 className="flex items-center gap-3 mb-4"
               >
                 <span className="block w-8 h-px bg-amber-500/60" />
-                <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+                <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                   Our Story
                 </span>
               </motion.div>
@@ -85,7 +85,7 @@ export default function FounderStory() {
                   <p className="text-[14px] text-zinc-300 font-medium">
                     Alston D’Mendonca
                   </p>
-                  <p className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.1em] mt-1">
+                  <p className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.1em] mt-1">
                     Co-Founder &amp; CEO, ViperCore
                   </p>
                 </div>

@@ -52,7 +52,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
           {faq.question}
         </span>
         <ChevronDown
-          className={`w-4 h-4 text-zinc-600 shrink-0 transition-transform duration-200 ${
+          className={`w-4 h-4 text-zinc-500 shrink-0 transition-transform duration-200 ${
             open ? 'rotate-180' : ''
           }`}
         />
@@ -93,7 +93,7 @@ export default function FAQ() {
               className="flex items-center gap-3 mb-4"
             >
               <span className="block w-8 h-px bg-amber-500/60" />
-              <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+              <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                 FAQ
               </span>
             </motion.div>

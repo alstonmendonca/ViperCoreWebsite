@@ -46,10 +46,10 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        heading: ['Syne', 'system-ui', 'sans-serif'],
-        body: ['"Crimson Pro"', 'Georgia', 'serif'],
-        mono: ['"DM Mono"', 'monospace'],
-        sans: ['"Crimson Pro"', 'Georgia', 'serif'],
+        heading: ['var(--font-heading)', 'system-ui', 'sans-serif'],
+        body: ['var(--font-body)', 'Georgia', 'serif'],
+        mono: ['var(--font-mono)', 'monospace'],
+        sans: ['var(--font-body)', 'Georgia', 'serif'],
       },
       keyframes: {
         'accordion-down': {

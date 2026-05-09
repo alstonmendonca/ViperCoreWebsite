@@ -80,7 +80,7 @@ export default function Hero() {
             className="lg:col-span-5 lg:pb-2"
           >
             <div className="border border-zinc-800/60 p-6 lg:p-8" style={{ borderRadius: '2px', background: 'rgba(19,19,17,0.5)' }}>
-              <div className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em] mb-6">
+              <div className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em] mb-6">
                 At a glance
               </div>
               <div className="space-y-5">

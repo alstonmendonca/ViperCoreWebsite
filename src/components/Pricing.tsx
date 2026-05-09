@@ -52,7 +52,7 @@ export default function Pricing() {
             className="flex items-center gap-3 mb-4"
           >
             <span className="block w-8 h-px bg-amber-500/60" />
-            <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+            <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
               Pricing
             </span>
           </motion.div>
@@ -86,7 +86,7 @@ export default function Pricing() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="block w-1.5 h-1.5 bg-amber-500/60" />
-                <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+                <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                   One-time purchase
                 </span>
               </div>
@@ -129,7 +129,7 @@ export default function Pricing() {
         >
           <div className="flex items-center gap-3 mb-6 mt-10">
             <span className="block w-8 h-px bg-zinc-800" />
-            <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+            <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
               Then choose your update plan
             </span>
           </div>
@@ -145,7 +145,7 @@ export default function Pricing() {
           <div className="lg:col-span-5 border border-zinc-800/40 p-8" style={{ borderRadius: '2px', background: 'rgba(19,19,17,0.2)' }}>
             <div className="flex items-center gap-3 mb-4">
               <span className="block w-1.5 h-1.5 bg-zinc-600" />
-              <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+              <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                 Free
               </span>
             </div>
@@ -162,7 +162,7 @@ export default function Pricing() {
             <ul className="space-y-3">
               {freeTier.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <Check className="w-4 h-4 text-zinc-600 mt-0.5 shrink-0" />
+                  <Check className="w-4 h-4 text-zinc-500 mt-0.5 shrink-0" />
                   <span className="text-[14px] text-zinc-500">{item}</span>
                 </li>
               ))}
@@ -173,7 +173,7 @@ export default function Pricing() {
           <div className="lg:col-span-7 border border-zinc-800/60 p-8 lg:mt-4" style={{ borderRadius: '2px', background: 'rgba(19,19,17,0.4)' }}>
             <div className="flex items-center gap-3 mb-4">
               <span className="block w-1.5 h-1.5 bg-amber-500/60" />
-              <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+              <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                 Pro Maintenance
               </span>
             </div>
@@ -216,12 +216,12 @@ export default function Pricing() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.4, delay: 0.35 }}
-          className="mt-14 pt-8 border-t border-zinc-800/40 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[12px] text-zinc-600 uppercase tracking-[0.1em]"
+          className="mt-14 pt-8 border-t border-zinc-800/40 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[12px] text-zinc-500 uppercase tracking-[0.1em]"
         >
           <span>No hidden fees</span>
-          <span className="text-zinc-800">·</span>
+          <span className="text-zinc-600">·</span>
           <span>30-day money-back guarantee</span>
-          <span className="text-zinc-800">·</span>
+          <span className="text-zinc-600">·</span>
           <span>Instant access</span>
         </motion.div>
       </div>

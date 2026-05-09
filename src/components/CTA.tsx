@@ -32,7 +32,7 @@ export default function CTA() {
           >
             <div className="flex items-center gap-3 mb-6">
               <span className="block w-8 h-px bg-amber-500/60" />
-              <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+              <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                 Get started
               </span>
             </div>
@@ -71,7 +71,7 @@ export default function CTA() {
               <p className="text-[14px] text-zinc-400">
                 Alston D Mendonca
               </p>
-              <p className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.1em]">
+              <p className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.1em]">
                 Co-Founder &amp; CEO, ViperCore
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 pt-1">

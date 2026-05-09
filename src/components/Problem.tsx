@@ -29,7 +29,7 @@ export default function Problem() {
               className="flex items-center gap-3 mb-4"
             >
               <span className="block w-8 h-px bg-amber-500/60" />
-              <span className="font-mono text-[11px] text-zinc-600 uppercase tracking-[0.15em]">
+              <span className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em]">
                 The Problem
               </span>
             </motion.div>

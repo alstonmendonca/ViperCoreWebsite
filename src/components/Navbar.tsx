@@ -109,7 +109,7 @@ export default function Navbar() {
           {/* Mobile */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <button className="md:hidden p-2 -mr-2 text-zinc-400">
+              <button className="md:hidden p-2 -mr-2 text-zinc-400" aria-label="Open menu">
                 <Menu className="h-5 w-5" />
               </button>
             </SheetTrigger>

@@ -54,7 +54,7 @@
   }
 
   body {
-    font-family: 'Crimson Pro', Georgia, serif;
+    font-family: var(--font-body), Georgia, serif;
     background: var(--warm-black);
     color: hsl(var(--foreground));
     -webkit-font-smoothing: antialiased;
@@ -68,11 +68,11 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Syne', system-ui, sans-serif;
+    font-family: var(--font-heading), system-ui, sans-serif;
   }
 
   code, pre, .font-mono {
-    font-family: 'DM Mono', monospace;
+    font-family: var(--font-mono), monospace;
   }
 }
 
