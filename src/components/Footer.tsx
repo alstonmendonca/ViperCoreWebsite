@@ -65,7 +65,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-10 lg:gap-16">
             {/* Quick links — inline, not a column grid */}
             <div>
-              <p className="font-mono text-[11px] text-zinc-400 uppercase tracking-[0.15em] mb-3" role="heading" aria-level="2">
+              <p className="font-mono text-[11px] text-zinc-400 uppercase tracking-[0.15em] mb-3" role="heading" aria-level={2}>
                 Navigate
               </p>
               <ul className="flex flex-wrap gap-x-6 gap-y-2">
@@ -84,7 +84,7 @@ export default function Footer() {
 
             {/* Social — horizontal strip */}
             <div>
-              <p className="font-mono text-[11px] text-zinc-400 uppercase tracking-[0.15em] mb-3" role="heading" aria-level="2">
+              <p className="font-mono text-[11px] text-zinc-400 uppercase tracking-[0.15em] mb-3" role="heading" aria-level={2}>
                 Follow
               </p>
               <div className="flex items-center gap-4">
