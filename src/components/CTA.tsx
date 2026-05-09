@@ -51,12 +51,7 @@ export default function CTA() {
                 Get ViperCore
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center h-11 px-6 text-[13px] text-zinc-500 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-200" style={{ borderRadius: '2px' }}
-              >
-                Start 7-Day Trial
-              </a>
+
               <a
                 href="tel:+919108816244"
                 className="group inline-flex items-center gap-2 h-11 px-6 text-[13px] text-zinc-500 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-200" style={{ borderRadius: '2px' }}
@@ -69,7 +64,7 @@ export default function CTA() {
             {/* Contact details */}
             <div className="pt-6 border-t border-zinc-800/40 space-y-2">
               <p className="text-[14px] text-zinc-400">
-                Alston D Mendonca
+                Alston Mendonca
               </p>
               <p className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.1em]">
                 Co-Founder &amp; CEO, ViperCore

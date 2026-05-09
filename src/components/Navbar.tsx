@@ -99,7 +99,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
             <a
-              href="mailto:alstondmendonca@gmail.com"
+              href="#contact"
               className="inline-flex items-center h-8 px-4 text-[12px] font-medium text-zinc-950 bg-white hover:bg-amber-400 transition-colors duration-200" style={{ borderRadius: '2px' }}
             >
               Contact
@@ -140,7 +140,7 @@ export default function Navbar() {
               </nav>
               <Separator className="my-4 bg-zinc-800/40" />
               <a
-                href="mailto:alstondmendonca@gmail.com"
+                href="#contact"
                 onClick={() => setOpen(false)}
                 className="block w-full text-center px-4 py-2.5 text-[13px] font-medium text-zinc-950 bg-white hover:bg-amber-400 transition-colors" style={{ borderRadius: '2px' }}
               >

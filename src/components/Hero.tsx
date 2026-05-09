@@ -63,12 +63,7 @@ export default function Hero() {
                 Get ViperCore
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center h-11 px-6 text-[13px] text-zinc-500 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-200" style={{ borderRadius: '2px' }}
-              >
-                Start 7-Day Trial
-              </a>
+
             </motion.div>
           </div>
 

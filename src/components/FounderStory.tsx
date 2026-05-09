@@ -83,7 +83,7 @@ export default function FounderStory() {
                     <span className="font-heading text-lg font-bold text-amber-500/80">A</span>
                   </div>
                   <p className="text-[14px] text-zinc-300 font-medium">
-                    Alston D’Mendonca
+                    Alston Mendonca
                   </p>
                   <p className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.1em] mt-1">
                     Co-Founder &amp; CEO, ViperCore

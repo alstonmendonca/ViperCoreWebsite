@@ -56,7 +56,7 @@ export default function Footer() {
                 ViperCore
               </span>
             </div>
-            <p className="text-[15px] text-zinc-500 leading-relaxed">
+            <p className="text-[15px] text-zinc-400 leading-relaxed">
               Offline POS software built for Indian businesses. Runs on your machine, not in the cloud.
             </p>
           </div>
@@ -65,15 +65,15 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-10 lg:gap-16">
             {/* Quick links — inline, not a column grid */}
             <div>
-              <h4 className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em] mb-3">
+              <p className="font-mono text-[11px] text-zinc-400 uppercase tracking-[0.15em] mb-3" role="heading" aria-level="2">
                 Navigate
-              </h4>
+              </p>
               <ul className="flex flex-wrap gap-x-6 gap-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-[14px] text-zinc-500 hover:text-white transition-colors duration-150"
+                      className="text-[14px] text-zinc-400 hover:text-white transition-colors duration-150"
                     >
                       {link.label}
                     </a>
@@ -84,16 +84,16 @@ export default function Footer() {
 
             {/* Social — horizontal strip */}
             <div>
-              <h4 className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.15em] mb-3">
+              <p className="font-mono text-[11px] text-zinc-400 uppercase tracking-[0.15em] mb-3" role="heading" aria-level="2">
                 Follow
-              </h4>
+              </p>
               <div className="flex items-center gap-4">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
-                    className="text-zinc-500 hover:text-white transition-colors duration-150"
+                    className="text-zinc-400 hover:text-white transition-colors duration-150"
                   >
                     <social.icon className="w-4 h-4" />
                   </a>
@@ -105,7 +105,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="py-6 border-t border-zinc-800/40">
-          <p className="font-mono text-[11px] text-zinc-500 uppercase tracking-[0.1em]">
+          <p className="font-mono text-[11px] text-zinc-400 uppercase tracking-[0.1em]">
             &copy; 2026 ViperCore. All rights reserved.
           </p>
         </div>
