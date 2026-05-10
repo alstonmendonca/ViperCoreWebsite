@@ -2,7 +2,6 @@
 import Hero from "@/components/Hero"
 import Problem from "@/components/Problem"
 import Features from "@/components/Features"
-import AppShowcase from "@/components/AppShowcase"
 import Comparison from "@/components/Comparison"
 import Mangalore from "@/components/Mangalore"
 import Migration from "@/components/Migration"
@@ -20,7 +19,6 @@ export default function Home() {
       <Hero />
       <Problem />
       <Features />
-      <AppShowcase />
       <Comparison />
       <Mangalore />
       <Migration />
